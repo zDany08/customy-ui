@@ -1,11 +1,11 @@
-## Customy UI
+# Customy UI
 
 There are many React UI libraries nowadays but, personally, I've always struggled trying to customize them (both style and functionality). Since most UI components are "standard" and used in almost all types of website/web app, I needed a way to re-use them across projects, so Customy UI was born.
 
 > **!!! IMPORTANT !!!**<br>
 Customy UI is NOT compatible with React Native, use it for WEB ONLY.
 
-### How It Works
+## How It Works
 
 Customy UI uses a different approach to ensure customization without having a mass of props to change the styling. Bigger/more complex components are subdivided in sub-components, so you can build your own "library" by assembling them together. This allows you to change the appearance of your components without overwhelming custom-styling systems. You can also add custom functionality if you need.
 
@@ -101,7 +101,7 @@ In this case, we have a _DropDown_, a pre-assembled component for a quick setup 
 
 There is also a dark mode version for those who use [Tailwind](https://tailwindcss.com/docs/dark-mode#using-a-data-attribute), you can enable it by adding a _data-theme=dark_ on a parent component.
 
-### Component Index
+## Component Index
 
 This is a list of available components you can use. Each component with "pre-built" label is a pre-assembled boilerplate component you can use if you don't need customization (e.g. testing/debugging projects).
 
@@ -113,7 +113,6 @@ This is a list of available components you can use. Each component with "pre-bui
 - DropdownField
 - DropdownMenu
 - DropdownOption
-
-### Customy UI's Future
-
-It all started for a personal need but I wanted to share this library because I think it has a high potential. However, I don't guarantee Customy UI will be constantly updated and fixed, so you're free to contribute.
+- ProgressBar _(pre-built)_
+- ProgressBarContainer
+- ProgressBarFill

@@ -1,8 +1,10 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
 
+export type TextFieldType = "text" | "tel" | "email" | "password" | "url";
+
 export type TextFieldProps = React.DetailedHTMLProps<Omit<React.InputHTMLAttributes<HTMLInputElement>, "type"> & {
-    type?: "text" | "tel" | "email" | "password" | "url"
+    type?: TextFieldType
 }, HTMLInputElement>;
 
 export function TextField(props: TextFieldProps) {

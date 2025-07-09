@@ -2,13 +2,22 @@ import React, { useCallback } from "react";
 import { twMerge } from "tailwind-merge";
 import { FaAngleUp, FaAngleDown } from "react-icons/fa6";
 import { ContainerProps, Container } from "./container";
-import { ButtonProps, Button } from "./buttons";
+import { ButtonProps, Button } from "./button";
 import { TextFieldProps, TextField } from "./text-inputs";
 import { DropdownProvider, useDropdown } from "../contexts/dropdown";
 
 export type DropdownProps = {
+    /**
+     * Whether menu is open or not
+     */
     shown: boolean,
+    /**
+     * Triggered when menu opens
+     */
     onShow?: () => void,
+    /**
+     * Triggered when menu closes
+     */
     onHide?: () => void,
     children: React.ReactNode,
     placeholder?: string,
@@ -67,6 +76,9 @@ export function DropdownMenu(props: ContainerProps) {
 }
 
 export type DropdownOptionProps = Omit<ButtonProps, "onClick"> & {
+    /**
+     * String-based value assigned to an option
+     */
     option?: string
 };
 
