@@ -1,6 +1,6 @@
 {
   "name": "customy-ui",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Fully customizable UI components for React.",
   "homepage": "https://github.com/zDany08/customy-ui#readme",
   "bugs": {
@@ -10,6 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/zDany08/customy-ui.git"
   },
+  "keywords": [
+    "front-end",
+    "react",
+    "ux",
+    "ui",
+    "custom"
+  ],
   "license": "MIT",
   "author": "zDany",
   "type": "module",

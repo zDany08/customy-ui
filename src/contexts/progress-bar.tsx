@@ -1,5 +1,5 @@
 import React, { createContext, useContext } from "react";
-import { ProgressBarProps } from "../components/progress";
+import { ProgressBarProps } from "../components/progress-bar";
 
 const ProgressBarContext = createContext<ProgressBarProps | undefined>(undefined);
 

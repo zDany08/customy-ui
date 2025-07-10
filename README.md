@@ -116,3 +116,6 @@ This is a list of available components you can use. Each component with "pre-bui
 - ProgressBar _(pre-built)_
 - ProgressBarContainer
 - ProgressBarFill
+- ProgressCircle _(pre-built)_
+- ProgressCircleContainer
+- ProgressCircleFill
