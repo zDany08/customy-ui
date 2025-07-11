@@ -49,7 +49,8 @@ Here's another example:
 
 import { useState, useCallback } from "react";
 import { FaUser, FaUserTie, FaCrown } from "react-icons/fa6";
-import { Container, Button, TextField, TextArea, Dropdown, DropdownOption } from "customy-ui";
+import { Container, Button, TextField, TextArea } from "customy-ui";
+import { Dropdown, DropdownOption } from "customy-ui/client";
 
 export type UserType = "member" | "moderator" | "admin";
 
@@ -103,19 +104,19 @@ There is also a dark mode version for those who use [Tailwind](https://tailwindc
 
 ## Component Index
 
-This is a list of available components you can use. Each component with "pre-built" label is a pre-assembled boilerplate component you can use if you don't need customization (e.g. testing/debugging projects).
+This is a list of available components you can use. For those who use SSR (Server-Side Rendering), client-only components are marked as _[Client]_. Each component with "pre-built" label is a pre-assembled boilerplate you can use if you don't need customization (e.g. testing/debugging projects).
 
-- Container
-- Button
-- TextField
-- TextArea
-- Dropdown _(pre-built)_
-- DropdownField
-- DropdownMenu
-- DropdownOption
-- ProgressBar _(pre-built)_
-- ProgressBarContainer
-- ProgressBarFill
-- ProgressCircle _(pre-built)_
-- ProgressCircleContainer
-- ProgressCircleFill
+- **Container**
+- **Button**
+- **TextField**
+- **TextArea**
+- **Dropdown** [Client] _(pre-built)_
+- **DropdownField** [Client]
+- **DropdownMenu** [Client]
+- **DropdownOption** [Client]
+- **ProgressBar** [Client] _(pre-built)_
+- **ProgressBarContainer** [Client]
+- **ProgressBarFill** [Client]
+- **ProgressCircle** [Client] _(pre-built)_
+- **ProgressCircleContainer** [Client]
+- **ProgressCircleFill** [Client]

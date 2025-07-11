@@ -1,6 +1,6 @@
 {
   "name": "customy-ui",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Fully customizable UI components for React.",
   "homepage": "https://github.com/zDany08/customy-ui#readme",
   "bugs": {
@@ -20,8 +20,10 @@
   "license": "MIT",
   "author": "zDany",
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./client": "./dist/client.js"
+  },
   "scripts": {
     "build:css": "npx @tailwindcss/cli -i ./src/styles.css -o ./dist/styles.css",
     "build": "npm run build:css & tsc --declaration"
@@ -33,13 +35,9 @@
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.11",
     "@types/react": "^19.1.8",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0",
     "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3"
-  },
-  "peerDependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
   }
 }
